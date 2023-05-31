@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.voiture.HomeController">
+   <left>
+      <VBox alignment="CENTER_LEFT" maxWidth="180.0" minWidth="180.0" prefHeight="435.0" prefWidth="180.0" spacing="20.0" style="-fx-background-color: #1a2a31;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="b1" mnemonicParsing="false" onAction="#m1" style="-fx-background-color: transparent;" text="Accueil" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="b2" mnemonicParsing="false" onAction="#m2" style="-fx-background-color: transparent;" text="Voitures" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="b3" mnemonicParsing="false" onAction="#m3" style="-fx-background-color: transparent;" text="Clients" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="b4" mnemonicParsing="false" onAction="#m4" style="-fx-background-color: transparent;" text="Locations" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="b5" mnemonicParsing="false" onAction="#m5" style="-fx-background-color: transparent;" text="Contrats" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="b6" mnemonicParsing="false" onAction="#m6" style="-fx-background-color: transparent;" text="Statistiques 1" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="b7" mnemonicParsing="false" onAction="#m7" style="-fx-background-color: transparent;" text="Statistiques 2" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="b8" mnemonicParsing="false" onAction="#m8" style="-fx-background-color: transparent;" text="Quitter" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER" maxHeight="90.0" maxWidth="750.0" minHeight="90.0" prefHeight="90.0" prefWidth="750.0" spacing="500.0" style="-fx-background-color: #1a2a31;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Society" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="95.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/first.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Pane fx:id="show" maxHeight="425.0" maxWidth="570.0" minHeight="425.0" minWidth="570.0" prefHeight="425.0" prefWidth="570.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

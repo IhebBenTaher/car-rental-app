@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="425.0" maxWidth="570.0" minHeight="425.0" minWidth="570.0" prefHeight="425.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.voiture.VoitureController">
+   <children>
+      <HBox prefHeight="155.0" prefWidth="570.0" spacing="20.0">
+         <children>
+            <GridPane hgap="10.0" prefHeight="146.0" prefWidth="390.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="105.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="84.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="2.0" prefWidth="84.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.0" minWidth="10.0" prefWidth="86.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ComboBox fx:id="c1" prefWidth="150.0" promptText="Immatricule" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" />
+                  <ComboBox fx:id="c2" prefHeight="25.0" prefWidth="98.0" promptText="Modèle" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="1" />
+                  <ComboBox fx:id="c3" prefWidth="150.0" promptText="Couleur" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="2" />
+                  <ComboBox fx:id="c4" prefHeight="25.0" prefWidth="84.0" promptText="Prix" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="3" />
+                  <Label style="-fx-background-color: transparent;" text="Immatricule" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="7.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Ebrima" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-background-color: transparent;" text="Modèle" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="7.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Ebrima" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-background-color: transparent;" text="Couleur" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="7.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Ebrima" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-background-color: transparent;" text="Prix" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="7.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="Ebrima" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="t1" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets top="-40.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="t2" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets top="-40.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="t3" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets top="-40.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="t4" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets top="-40.0" />
+                     </GridPane.margin>
+                  </TextField>
+               </children>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </GridPane>
+            <ImageView fx:id="t5" fitHeight="140.0" fitWidth="140.0" onMouseClicked="#imp" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../../../images/first.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <TableView fx:id="tab" prefHeight="190.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="cl1" prefWidth="142.0" text="Immatricule" />
+          <TableColumn fx:id="cl2" prefWidth="157.0" text="Modèle" />
+            <TableColumn fx:id="cl3" prefWidth="130.0" text="Couleur" />
+            <TableColumn fx:id="cl4" prefWidth="140.0" text="Prix" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" prefHeight="77.0" prefWidth="570.0" spacing="20.0">
+         <children>
+            <Button fx:id="b1" mnemonicParsing="false" onAction="#a1" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Chercher">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="b2" mnemonicParsing="false" onAction="#a2" prefWidth="110.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Ajouter">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="b3" mnemonicParsing="false" onAction="#a3" prefWidth="110.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Modifier">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="b4" mnemonicParsing="false" onAction="#a4" prefWidth="110.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Supprimer">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

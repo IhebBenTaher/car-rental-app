@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="425.0" maxWidth="570.0" minHeight="425.0" minWidth="570.0" prefHeight="425.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.voiture.ClientController">
+   <children>
+      <GridPane hgap="10.0" prefHeight="146.0" prefWidth="390.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="104.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="73.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="2.0" prefWidth="88.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.0" minWidth="10.0" prefWidth="68.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.0" minWidth="10.0" prefWidth="78.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.0" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ComboBox fx:id="c1" prefWidth="150.0" promptText="Identifiant" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" />
+            <ComboBox fx:id="c2" prefHeight="25.0" prefWidth="98.0" promptText="Nom" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="1" />
+            <ComboBox fx:id="c3" prefWidth="150.0" promptText="Prénom" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="2" />
+            <ComboBox fx:id="c4" prefHeight="25.0" prefWidth="84.0" promptText="Age" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="3" />
+            <Label style="-fx-background-color: transparent;" text="Identifiant" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="7.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Label>
+            <Label style="-fx-background-color: transparent;" text="Nom" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="7.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Label>
+            <Label style="-fx-background-color: transparent;" text="Prénom" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="7.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Label>
+            <Label style="-fx-background-color: transparent;" text="Age" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="7.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t1" onKeyTyped="#check" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets top="-40.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="t2" onKeyTyped="#check" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets top="-40.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="t3" onKeyTyped="#check" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets top="-40.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="t4" onKeyTyped="#check" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets top="-40.0" />
+               </GridPane.margin>
+            </TextField>
+            <ComboBox fx:id="c5" prefHeight="25.0" prefWidth="84.0" promptText="Sexe" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="4" />
+            <ComboBox fx:id="c6" prefHeight="25.0" prefWidth="84.0" promptText="Ville" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="5" />
+            <Label style="-fx-background-color: transparent;" text="Sexe" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="7.0" />
+               </GridPane.margin>
+            </Label>
+            <Label style="-fx-background-color: transparent;" text="Ville" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ebrima" size="14.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="7.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="t5" onKeyTyped="#check" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets top="-40.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="t6" onKeyTyped="#check" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 3 0;" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets top="-40.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+      </GridPane>
+      <TableView fx:id="tab" prefHeight="190.0" prefWidth="471.0">
+        <columns>
+          <TableColumn fx:id="cl1" prefWidth="89.0" text="Identifiant" />
+          <TableColumn fx:id="cl2" prefWidth="107.0" text="Nom" />
+            <TableColumn fx:id="cl3" prefWidth="104.0" text="Prénom" />
+            <TableColumn fx:id="cl4" prefWidth="69.0" text="Age" />
+            <TableColumn fx:id="cl5" prefWidth="84.0" text="Sexe" />
+            <TableColumn fx:id="cl6" prefWidth="96.0" text="Ville" />
+        </columns>
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" />
+         </VBox.margin>
+      </TableView>
+      <HBox alignment="CENTER" prefHeight="77.0" prefWidth="570.0" spacing="20.0">
+         <children>
+            <Button fx:id="b1" mnemonicParsing="false" onAction="#a1" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Chercher">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="b2" mnemonicParsing="false" onAction="#a2" prefWidth="110.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Ajouter">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="b3" mnemonicParsing="false" onAction="#a3" prefWidth="110.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Modifier">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="b4" mnemonicParsing="false" onAction="#a4" prefWidth="110.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="Supprimer">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

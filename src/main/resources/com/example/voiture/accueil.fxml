@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.voiture.AccueilController">
+   <top>
+      <Label fx:id="t" alignment="CENTER" prefHeight="37.0" prefWidth="538.0" style="-fx-background-color: #1a2a31;" textFill="WHITE" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="15.0" top="15.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="Ebrima Bold" size="16.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <ImageView fx:id="t5" fitHeight="316.0" fitWidth="335.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="20.0" top="-30.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </left>
+   <center>
+      <VBox maxWidth="200.0" minWidth="200.0" prefHeight="408.0" prefWidth="200.0" BorderPane.alignment="CENTER_RIGHT">
+         <children>
+            <Label text="Immatricule">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="t1" alignment="CENTER" editable="false" style="-fx-background-color: transparent; -fx-border-width: 0 0 3 0; -fx-border-color: black;">
+               <VBox.margin>
+                  <Insets left="10.0" right="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+            </TextField>
+            <Label text="Modèle">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="t2" alignment="CENTER" editable="false" style="-fx-background-color: transparent; -fx-border-width: 0 0 3 0; -fx-border-color: black;">
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="15.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Couleur">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="t3" alignment="CENTER" editable="false" style="-fx-background-color: transparent; -fx-border-width: 0 0 3 0; -fx-border-color: black;">
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="15.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Prix">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="t4" alignment="CENTER" editable="false" style="-fx-background-color: transparent; -fx-border-width: 0 0 3 0; -fx-border-color: black;">
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="15.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button fx:id="b1" maxWidth="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#a1" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 5;" text="Précédent">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="b2" maxWidth="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#a2" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 5;" text="Suivant">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
